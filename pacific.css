@@ -1,11 +1,10 @@
 body {
-    background-color: #90c7e3;
-    background-image: linear-gradient(to bottom, #ffffff, #90c7e3);
+    background-color: #4f6d93;
+    background-image: linear-gradient(to bottom, #ffffff, #4f6d93);
     background-repeat: no-repeat;
     color: #666666;
     font-family: Arial, Helvetica, sans-serif;
 }
-
 header {
     background-image: url(sunset.jpg);
     background-repeat: no-repeat;
@@ -20,17 +19,36 @@ header {
 main {
     padding: 1px 20px 20px 20px;
     display: block;
+    background-color: #ffffff;
+    margin-left: 190px;
+    padding-left: 30px;
 }
 
 nav {
-    background-color: #ffffff;
     font-weight: bold;
-    text-align: center;
-    padding: 10px;
+    padding: 20px;
+    float: left;
+    width: 160px;
+}
+
+nav ul {
+    text-decoration: none;
 }
 
 nav a {
     text-decoration: none;
+}
+
+nav a:link {
+    color: #000033;
+}
+
+nav a:visited {
+    color: #344873;
+}
+
+nav a:hover {
+    color: #ffffff
 }
 
 h1 {
@@ -49,16 +67,18 @@ h3 {
     font-family: Georgia, "Times New Roman", serif;
 }
 
-ul {
+main ul {
     list-style-image: url(marker.gif);
 }
 
 footer {
+    background-color: #ffffff;
     font-size: 75%;
     font-style: italic;
     text-align: center;
     font-family: Georgia, "Times New Roman", serif;
     padding: 20px;
+    margin-left: 190px;
 }
 
 dt {
@@ -78,7 +98,7 @@ dt {
     margin-left: auto;
     margin-right: auto;
     width: 80%;
-    background-color: #ffffff;
+    background-color: #90c7e3;
     min-width: 960px;
     max-width: 2048px;
     box-shadow: 3px 3px 3px #333333;
@@ -88,19 +108,22 @@ dt {
     height: 300px;
     background-image: url(coasthero.jpg);
     background-repeat: no-repeat;
-    background-size: 100% 100%
+    background-size: 100% 100%;
+    margin-left: 190px;
 }
 
 #yurthero {
     height: 300px;
     background-image: url(yurthero.jpg);
     background-repeat: no-repeat;
-    background-size: 100% 100%
+    background-size: 100% 100%;
+    margin-left: 190px;
 }
 
 #trailhero {
     height: 300px;
     background-image: url(trailhero.jpg);
     background-repeat: no-repeat;
-    background-size: 100% 100%
+    background-size: 100% 100%;
+    margin-left: 190px;
 }
