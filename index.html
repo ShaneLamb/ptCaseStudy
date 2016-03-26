@@ -5,15 +5,21 @@
     <title>Pacific Trails Resort</title>
     <meta charset="utf-8">
     <link rel="stylesheet" href="pacific.css">
+    <meta name="viewport" content="width=device-width,
+     initial-scale=1.0">
+    <!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js">
+</script>
+<![endif]-->
 </head>
 
 <body>
     <div id="wrapper">
-        <header>
+        <header id="header">
             <h1>Pacific Trails Resort</h1>
         </header>
         <nav>
-            <ul>
+            <ul id="ulnav">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="yurts.html">Yurts</a></li>
                 <li><a href="activities.html">Activities</a></li>
@@ -37,8 +43,10 @@
                 <br> 12010 Pacific Trails Road
                 <br> Zephyr, CA 95555
                 <br>
-                <br> 888-555-5555
+                <br> <a id="mobile" href="tel:888-555-5555">888-555-5555</a>
+                <span id="desktop">888-555-5555</span>
             </div>
+
         </main>
         <footer>
             <br> Copyright &copy; 2016 Pacific Trails Resort
