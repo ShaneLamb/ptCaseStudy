@@ -189,6 +189,18 @@ input { display: block;
 textarea { display: block;
         margin-bottom: 20px;}
 input[type="submit"] { margin-left: 130px;}
+label { float: left;
+        display: block;
+        text-align: right;
+        width: 120px;
+        padding-right: 10px;}
+input { display: block;
+        margin-bottom: 20px;}
+textarea { display: block;
+        margin-bottom: 20px;}
+input[type="submit"] { margin-left: 130px;}
+video, embed { float: right; 
+               padding-left: 20px;}
 
 @media only screen and (max-width: 64em) {
     body {
