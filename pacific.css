@@ -179,6 +179,17 @@ tr:nth-of-type(odd) {
     display: inline;
 }
 
+label { float: left;
+        display: block;
+        text-align: right;
+        width: 120px;
+        padding-right: 10px;}
+input { display: block;
+        margin-bottom: 20px;}
+textarea { display: block;
+        margin-bottom: 20px;}
+input[type="submit"] { margin-left: 130px;}
+
 @media only screen and (max-width: 64em) {
     body {
         margin: 0;
@@ -238,6 +249,9 @@ tr:nth-of-type(odd) {
     nav a {
         display: block;
     }
+    label { float: none;
+            text-align: left;}
+    input[type="submit"] { margin-left: 0;}
     #header {
         padding-top: 1em;
     }
