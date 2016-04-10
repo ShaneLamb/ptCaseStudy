@@ -27,7 +27,6 @@ main {
 
 nav {
     font-weight: bold;
-    padding: 20px;
     float: left;
     width: 160px;
 }
@@ -35,10 +34,12 @@ nav {
 nav ul {
     text-decoration: none;
     list-style-type: none;
+    padding-left: 20px;
 }
 
 nav a {
     text-decoration: none;
+    transition: color 3s ease-out;
 }
 
 nav a:link {
@@ -82,6 +83,7 @@ footer {
     font-family: Georgia, "Times New Roman", serif;
     padding: 20px;
     margin-left: 190px;
+    clear: both;
 }
 
 header,
@@ -118,6 +120,34 @@ td {
 
 tr:nth-of-type(odd) {
     background-color: #f5fafc;
+}
+
+label {
+    float: left;
+    display: block;
+    text-align: right;
+    width: 120px;
+    padding-right: 10px;
+}
+
+input {
+    display: block;
+    margin-bottom: 20px;
+}
+
+textarea {
+    display: block;
+    margin-bottom: 20px;
+}
+
+input[type="submit"] {
+    margin-left: 130px;
+}
+
+video,
+embed {
+    float: right;
+    padding-left: 20px;
 }
 
 .text {
@@ -179,28 +209,49 @@ tr:nth-of-type(odd) {
     display: inline;
 }
 
-label { float: left;
-        display: block;
-        text-align: right;
-        width: 120px;
-        padding-right: 10px;}
-input { display: block;
-        margin-bottom: 20px;}
-textarea { display: block;
-        margin-bottom: 20px;}
-input[type="submit"] { margin-left: 130px;}
-label { float: left;
-        display: block;
-        text-align: right;
-        width: 120px;
-        padding-right: 10px;}
-input { display: block;
-        margin-bottom: 20px;}
-textarea { display: block;
-        margin-bottom: 20px;}
-input[type="submit"] { margin-left: 130px;}
-video, embed { float: right; 
-               padding-left: 20px;}
+#gallery {
+    position: relative;
+    height: 200px;
+}
+
+#gallery ul {
+    list-style-type: none;
+    width: 300px;
+}
+
+#gallery li {
+    display: inline-block;
+    padding: 10px;
+}
+
+#gallery img {
+    border-style: none;
+}
+
+#gallery a {
+    text-decoration: none;
+    font-style: italic;
+    color: #000000;
+    text-align: left;
+}
+
+#gallery span {
+    position: absolute;
+    left: -1000px;
+}
+
+#gallery a:hover span {
+    position: absolute;
+    top: 16px;
+    left: 320px;
+    text-align: center;
+}
+
+figure {
+    position: absolute;
+    left: 280px;
+    text-align: center;
+}
 
 @media only screen and (max-width: 64em) {
     body {
@@ -261,9 +312,13 @@ video, embed { float: right;
     nav a {
         display: block;
     }
-    label { float: none;
-            text-align: left;}
-    input[type="submit"] { margin-left: 0;}
+    label {
+        float: none;
+        text-align: left;
+    }
+    input[type="submit"] {
+        margin-left: 0;
+    }
     #header {
         padding-top: 1em;
     }
@@ -288,6 +343,9 @@ video, embed { float: right;
         display: inline;
     }
     #desktop {
+        display: none;
+    }
+    #gallery {
         display: none;
     }
 }
